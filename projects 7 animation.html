@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            column-gap:10px;
+            row-gap: 10px;
+        }
+        img{
+            padding: 30px;
+            margin: 20px 30px;
+            text-align: center;
+            justify-content: center;
+            width: 60%;
+            }
+
+            @media screen and (max-width:638px){
+                .container{
+                    display:flex;
+                    flex-direction: column;
+                }
+                img{
+                    padding:20px;
+                    width: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <img src="image 1.jpg" alt="">
+            <img src="image 2.jpg" alt="">
+            <img src="image 3.jpg" alt="">
+            <img src="image 4.jpg" alt="">
+    
+    </div>
+</body>
+</html>
